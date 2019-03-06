@@ -1,0 +1,52 @@
+.contents{
+	width: 100%;
+	padding: 10px 10px;
+	height: calc(100% - 70px);
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+.cont1{
+	width: 100%;
+	height: calc(50% - 5px);
+	border: 1px solid #004672;
+    border-radius: 4px;
+}
+.cont11{
+	width: 100%;
+	height: 100%;
+}
+
+.cont11 a.titles {
+    width: 200px;
+    margin: auto;
+    margin-top: 10px;
+}
+#louyu2{
+	width: 100%;
+	height: calc(100% - 34px);
+}
+
+
+
+
+.cont2{
+	width: 100%;
+	height: calc(50% - 5px);
+	border: 1px solid #004672;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+.cont21{
+	width: 100%;
+	height: 100%;
+}
+.cont21 a.titles {
+    width: 200px;
+    margin: auto;
+    margin-top: 10px;
+}
+#louyus{
+	width: 100%;
+	height: calc(100% - 34px);
+}

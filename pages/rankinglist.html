@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>排行榜</title>
+		<link rel="stylesheet" href="/project1/styles/bootstrap.min.css" >
+		<link rel="stylesheet" type="text/css" href="../styles/heads_j.css"/>
+		<link rel="stylesheet" type="text/css" href="../styles/rankinglist.css"/>
+	</head>
+	<body>
+		<div class="content">
+			<!--头部-->
+			<div class="head ub">
+				<div class="head1">
+					<a href="#" class="ub"><span></span><span>张海洋(副局长)</span><span></span></a>
+					<div class="head1B">
+						<span id="user_info">个人信息</span>
+						<span>退出</span>
+					</div>
+				</div>
+				<div class="head2">
+					<p>安全•经济•高效</p>
+					<p>上海卫计委医院后勤综合数据分析平台</p>
+					<div class="head2_con">
+						<div class="ub head2_con_c">
+							<a href="home.html"><img src="../images/home/fenxi.png"/><br/>分析</a>
+							<span><img src="../images/home/fengexian.png"/></span>
+							<a href="#" class="colors"><img src="../images/home/bluepaihang.png"/><br/>排行榜</a>
+							<span><img src="../images/home/fengexian.png"/></span>
+							<a href="#"><img src="../images/home/jianguan.png"/><br/>监管</a>
+							<span><img src="../images/home/fengexian.png"/></span>
+							<a href="#"><img src="../images/home/biaozhun.png"/><br/>标准</a>
+							<span><img src="../images/home/fengexian.png"/></span>
+							<a href="#"><img src="../images/home/icon_shuju.png"/><br/>数据</a>
+						</div>						
+					</div>
+				</div>
+				<div class="head3">					
+					<span id="sandian"></span>
+					<span>2016年上海市(市综合)</span>					
+				</div>
+				<div class="chaxun">
+					<h3>查询条件</h3>						
+					<div class="ub con1">
+						<span>统计时间:</span>
+						<select name="">
+							<option value="">按年统计</option>
+						</select>
+						<select name="">
+							<option value="">2016</option>
+						</select>
+					</div>
+					<div class="ub con2">
+						<span>医院分类:</span>
+						<div class="con22">
+							<span>全部</span>
+							<span>市综合</span>
+							<span>市专科</span>
+							<span>区专科</span>
+							<span>区属二甲以上</span>
+							<span>区属二乙</span>
+						</div>						
+					</div>
+					<div class="ub con3">
+						<span>HMI范围:</span>
+						<div class="ub">
+							<input type="text" name="" value="" placeholder="0"/>
+							<span>-</span>
+							<input type="text" name="" value="" placeholder="100" />
+						</div>						
+					</div>
+					<div class="ub con4">
+						<button>搜索</button>
+						<button>取消</button>
+					</div>
+				</div>
+			</div>		
+			
+			<!-- Modal -->
+		<div class="modal_top">
+			
+			<div class="info_modal" id="info_modal">
+				 <div class="left_x"><i>x </i></div>
+				 <div class="modal_content">
+					<h4>基本信息</h4>
+					<ul>
+						<li><span>隶属机构：</span><span>上海卫计委</span></li>
+						<li> <span>姓名：</span><span>张海洋</span></li>
+						<li> <span>职位：</span><span>副院长</span></li>
+					</ul>
+				 </div>
+				  <div class="modal_content">
+					<h4>账户信息</h4>
+					<ul>
+						<li><span>登录帐号：</span><span>上海卫计委</span></li>
+						<li> <span>登录密码：</span><input type="password" value="123456"><a href="#" id="change_pwd" style="color: #009bfe">修改</a></li>
+					</ul>
+				 </div>
+				 <div class="modal_btn">
+				 	<input type="button" value="提交">
+				 </div>
+			</div>
+			
+		</div>
+			
+			<!--内容-->
+			
+			<div class="contents">
+				<div class="contents1"></div>
+				<div class="row cont1">
+					<div class="col-xs-3" style="height: 100%;z-index: 1;">
+						<div class="contL1">
+							<div id="hmi"></div>
+						</div>
+						<div class="contL2">
+							<div class="contL21">
+								<p><span><img src="../images/rankinglist/icon_PHB_zjhqaqb.png"/></span>最佳后勤安全榜</p>
+								<p><span><img src="../images/rankinglist/icon_PHB_jp.png"/></span><span class="contL211"></span></p>
+							</div>
+							<img src="../images/rankinglist/img_PHB_xt.png"/>
+							<div class="contL21">
+								<p><span><img src="../images/rankinglist/icon_PHB_zjjjyxb.png"/></span>最佳经济运行榜</p>
+								<p><span><img src="../images/rankinglist/icon_PHB_jp.png"/></span><span class="contL212"></span></p>
+							</div>
+							<img src="../images/rankinglist/img_PHB_xt.png"/>
+							<div class="contL21">
+								<p><span><img src="../images/rankinglist/icon_PHB_zdjzxfb.png"/></span>最佳就诊费用榜</p>
+								<p><span><img src="../images/rankinglist/icon_PHB_jp.png"/></span><span class="contL213"></span></p>
+							</div>
+							<img src="../images/rankinglist/img_PHB_xt.png"/>
+							<div class="contL21">
+								<p><span><img src="../images/rankinglist/icon_PHB_zjhqjnb.png"/></span>最佳后勤节能榜</p>
+								<p><span><img src="../images/rankinglist/icon_PHB_jp.png"/></span><span class="contL214"></span></p>
+							</div>
+						</div>					
+					</div>
+					<div class="col-xs-6" style="height: 100%;z-index: 1;">
+						<div class="contC1">
+							<p>分项指数排行榜</p>
+							<div id="paihang"></div>
+						</div>						
+					</div>
+					<div class="col-xs-3" style="height: 100%;z-index: 1;">	
+						<div class="contR">
+							<div class="contR1">
+								<a href="HMI/HMI_list.html" class="ub titles"><span>排行榜</span><span></span></a>
+								<div class="contR11">
+									<div class="contR111"><span>Top <b>8</b></span><span>指数</span></div>
+									<ul>
+										<!--<li class="ub">
+											<span style="background-color: #22AC38;">1</span>
+											<span title="中山医院">中山医院医院医院</span>
+											<div class="percent">
+												<span></span>
+											</div>										
+											<span>89.56</span>
+										</li>
+										<li class="ub">
+											<span style="background-color: #22AC38;">2</span>
+											<span title="华山医院医院">华山医院医院</span>
+											<div class="percent">
+												<span style="width: 60%;"></span>
+											</div>										
+											<span>89.56</span>
+										</li>
+										<li class="ub">
+											<span style="background-color: #22AC38;">3</span>
+											<span title="中山医院">中山医院医院医院</span>
+											<div class="percent">
+												<span></span>
+											</div>										
+											<span>89.56</span>
+										</li>
+										<li class="ub">
+											<span>4</span>
+											<span title="华山医院医院">华山医院医院</span>
+											<div class="percent">
+												<span style="width: 60%;"></span>
+											</div>										
+											<span>89.56</span>
+										</li>
+										<li class="ub">
+											<span>5</span>
+											<span title="中山医院">中山医院医院医院</span>
+											<div class="percent">
+												<span></span>
+											</div>										
+											<span>89.56</span>
+										</li>
+										<li class="ub">
+											<span>6</span>
+											<span title="华山医院医院">华山医院医院</span>
+											<div class="percent">
+												<span style="width: 60%;"></span>
+											</div>										
+											<span>89.56</span>
+										</li>
+										<li class="ub">
+											<span>7</span>
+											<span title="中山医院">中山医院医院医院</span>
+											<div class="percent">
+												<span></span>
+											</div>										
+											<span>89.56</span>
+										</li>
+										<li class="ub">
+											<span>8</span>
+											<span title="华山医院医院">华山医院医院</span>
+											<div class="percent">
+												<span style="width: 60%;"></span>
+											</div>										
+											<span>89.56</span>
+										</li>-->
+									</ul>
+								</div>
+							</div>
+							<img src="../images/rankinglist/img_PHB_xt.png"/>
+							<div class="contR2">
+								<div class="contR21"><span>Bottom <b>8</b></span><span>指数</span></div>
+								<ul>
+									<!--<li class="ub">
+										<span style="background-color: #EB6100;">1</span>
+										<span title="中山医院">中山医院医院医院</span>
+										<div class="percent">
+											<span></span>
+										</div>										
+										<span>89.56</span>
+									</li>
+									<li class="ub">
+										<span style="background-color: #EB6100;">2</span>
+										<span title="华山医院医院">华山医院医院</span>
+										<div class="percent">
+											<span style="width: 60%;"></span>
+										</div>										
+										<span>89.56</span>
+									</li>
+									<li class="ub">
+										<span style="background-color: #EB6100;">3</span>
+										<span title="中山医院">中山医院医院医院</span>
+										<div class="percent">
+											<span></span>
+										</div>										
+										<span>89.56</span>
+									</li>
+									<li class="ub">
+										<span>4</span>
+										<span title="华山医院医院">华山医院医院</span>
+										<div class="percent">
+											<span style="width: 60%;"></span>
+										</div>										
+										<span>89.56</span>
+									</li>
+									<li class="ub">
+										<span>5</span>
+										<span title="中山医院">中山医院医院医院</span>
+										<div class="percent">
+											<span></span>
+										</div>										
+										<span>89.56</span>
+									</li>
+									<li class="ub">
+										<span>6</span>
+										<span title="华山医院医院">华山医院医院</span>
+										<div class="percent">
+											<span style="width: 60%;"></span>
+										</div>										
+										<span>89.56</span>
+									</li>
+									<li class="ub">
+										<span>7</span>
+										<span title="中山医院">中山医院医院医院</span>
+										<div class="percent">
+											<span></span>
+										</div>										
+										<span>89.56</span>
+									</li>
+									<li class="ub">
+										<span>8</span>
+										<span title="华山医院医院">华山医院</span>
+										<div class="percent">
+											<span style="width: 60%;"></span>
+										</div>										
+										<span>89.56</span>
+									</li>-->
+								</ul>
+							</div>						
+						</div>
+					</div>	
+				</div>				
+			</div>
+			
+			
+			
+			
+			
+			
+			
+		</div>
+	</body>
+	<script src="/project1/scripts/jQuery-2.2.0.min.js"></script>
+	<script src="/project1/scripts/echarts.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../scripts/rankinglist/hmi.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../scripts/rankinglist/paihang.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../scripts/rankinglist/rankinglist.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+		 $('#user_info').click(function(){
+		 	$('.modal_top').show();
+		 	$('.info_modal').show();
+		 	$('.contents1').hide();
+		 })
+		 $('.left_x>i').click(function(){
+		 	$('.modal_top').hide();
+		 	$('.info_modal').hide();
+		 })
+	</script>
+</html>

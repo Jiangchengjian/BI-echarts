@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>能耗指数分析</title>
+		<link rel="stylesheet" href="/project1/styles/bootstrap.min.css" >
+		<link rel="stylesheet" type="text/css" href="../../styles/heads_j.css"/>
+		<link rel="stylesheet" href="../../styles/energy_analysis.css">
+		
+	</head>
+	<body>
+		<div class="content">
+			<!--头部-->
+			<div class="heads_j ub">
+				<a href="javascript:history.back(-1)" class="head_span">返回</a>
+				<h1 class="head_h1">医院能耗指数EI</h1>
+				<div class="heads_j_j">					
+					<span id="sandian"></span>
+					<span>2016年上海市(市综合)</span>					
+				</div>
+				<div class="chaxun">
+					<h3>查询条件</h3>						
+					<div class="ub con1">
+						<span>统计时间:</span>
+						<select name="">
+							<option value="">按年统计</option>
+							<option value="">按季度统计</option>
+							<option value="">按月份统计</option>
+						</select>
+						<select name="">
+							<option value="">2016</option>
+						</select>
+					</div>
+					<div class="ub con2">
+						<span>医院分类:</span>
+						<div class="con22">
+							<span>全部</span>
+							<span>市综合</span>
+							<span>市专科</span>
+							<span>区专科</span>
+							<span>区属二甲以上</span>
+							<span>区属二乙</span>
+						</div>						
+					</div>
+					<div class="ub con3">
+						<span>HMI范围:</span>
+						<div class="ub">
+							<input type="text" name="" id="" value="" placeholder="0"/>
+							<span>-</span>
+							<input type="text" name="" id="" value="" placeholder="100" />
+						</div>						
+					</div>
+					<div class="ub con4">
+						<button>搜索</button>
+						<button>取消</button>
+					</div>
+				</div>
+			</div>			
+			
+			
+			
+			
+			<!--内容-->
+			
+			<div class="contents">
+				<div class="row cont1">
+					<div class="col-xs-3" style="height: 100%;z-index: 1;">
+						<div class="cont11">
+							<h3>医院耗能的设备类型分布</h3>
+							<div id="economic"></div>
+						</div>
+					</div>
+					<div class="col-xs-6" style="height: 100%;z-index: 1;">
+						<div class="cont12">
+							<h3>医院能耗指数EI</h3>
+							<div class="cont121 ub">
+								<div id="roi"></div>
+								<div class="cont121R">
+									<h3>医院指数</h3>
+									<ul>
+										<li class="ub"><span>市综合</span><span>76.84</span></li>
+										<li class="ub"><span>市综合医院是</span><span>76.84</span></li>
+										<li class="ub"><span>市综合</span><span>76.84</span></li>
+										<li class="ub"><span>市综合医院是</span><span>76.84</span></li>
+										<li class="ub"><span>市综合</span><span>76.84</span></li>
+										<li class="ub"><span>市综合医院是</span><span>76.84</span></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-3" style="height: 100%;z-index: 1;">
+						<div class="cont13">
+							<h3>医院能耗的能源分类</h3>
+							<div id="jingji"></div>
+						</div>
+					</div>
+					
+				</div>
+				
+				<div class="row cont2">
+					<div class="cont21 ub">
+						<div class="cont21T">
+							<a href="energy_indexlist_per.html" class="ub titles"><span>单位面积能耗分析</span><span></span></a>
+							<div id="qipao"></div>
+						</div>
+						
+						<span><img src="../../images/economic/img_sxl.png"/></span>
+						<div class="cont21R">
+							<div class="cont21RT">
+								<div class="cont21RT1 ub">
+									<span>先进能耗 Top<b>5</b></span>
+									<span>ROI指数</span>
+									<span>面积能耗</span>
+								</div>
+								<ul>
+									<li class="ub">
+										<div class="lis">
+											<div class="liss ub">
+												<span class="span1" style="background-color: #22AC38;">1</span>
+												<span class="span2">华山北院</span>
+											</div>											
+										</div>										
+										<span class="span3">88.09</span>
+										<span class="span4">1233</span>
+
+									</li>
+									<li class="ub">
+										<div class="lis">
+											<div class="liss ub">
+												<span class="span1" style="background-color: #22AC38;">2</span>
+												<span class="span2">中山医院医院</span>
+											</div>											
+										</div>										
+										<span class="span3">88.09</span>
+										<span class="span4">1233</span>
+
+									</li>
+									<li class="ub">
+										<div class="lis">
+											<div class="liss ub">
+												<span class="span1" style="background-color: #22AC38;">3</span>
+												<span class="span2">中山医院</span>
+											</div>											
+										</div>										
+										<span class="span3">88.09</span>
+										<span class="span4">1233</span>
+
+									</li>
+									<li class="ub">
+										<div class="lis">
+											<div class="liss ub">
+												<span class="span1">4</span>
+												<span class="span2">华山医院</span>
+											</div>											
+										</div>										
+										<span class="span3">88.09</span>
+										<span class="span4">1233</span>
+
+									</li>
+									<li class="ub">
+										<div class="lis">
+											<div class="liss ub">
+												<span class="span1">5</span>
+												<span class="span2">中医院</span>
+											</div>											
+										</div>										
+										<span class="span3">88.09</span>
+										<span class="span4">1233</span>
+
+									</li>
+								</ul>
+							</div>
+							<img src="../../images/rankinglist/img_PHB_xt.png"/>
+							<div class="cont21RT cont21RB">
+								<div class="cont21RT1 ub">
+									<span>超标能耗 Bottom<b>5</b></span>
+									<span>EI指数</span>
+									<span>面积能耗</span>
+								</div>
+								<ul>
+									<li class="ub">
+										<div class="lis">
+											<div class="liss ub">
+												<span class="span1" style="background-color: #EB6100;">1</span>
+												<span class="span2">华山北院</span>
+											</div>											
+										</div>										
+										<span class="span3">88.09</span>
+										<span class="span4">1233</span>
+
+									</li>
+									<li class="ub">
+										<div class="lis">
+											<div class="liss ub">
+												<span class="span1" style="background-color: #EB6100;">2</span>
+												<span class="span2">中山医院医院</span>
+											</div>											
+										</div>										
+										<span class="span3">88.09</span>
+										<span class="span4">1233</span>
+
+									</li>
+									<li class="ub">
+										<div class="lis">
+											<div class="liss ub">
+												<span class="span1" style="background-color: #EB6100;">3</span>
+												<span class="span2">中山医院</span>
+											</div>											
+										</div>										
+										<span class="span3">88.09</span>
+										<span class="span4">1233</span>
+
+									</li>
+									<li class="ub">
+										<div class="lis">
+											<div class="liss ub">
+												<span class="span1">4</span>
+												<span class="span2">华山医院</span>
+											</div>											
+										</div>										
+										<span class="span3">88.09</span>
+										<span class="span4">1233</span>
+
+									</li>
+									<li class="ub">
+										<div class="lis">
+											<div class="liss ub">
+												<span class="span1">5</span>
+												<span class="span2">中医院</span>
+											</div>											
+										</div>										
+										<span class="span3">88.09</span>
+										<span class="span4">1233</span>
+
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			
+			
+			
+			
+		</div>
+		
+		
+		
+		
+	</body>
+	<script src="/project1/scripts/jQuery-2.2.0.min.js"></script>
+	<script src="/project1/scripts/echarts.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../scripts/EI/economic.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../scripts/EI/roi.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../scripts/EI/jingji.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../scripts/EI/qipao.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../scripts/EI/enery_analysis.js" type="text/javascript" charset="utf-8"></script>
+</html>

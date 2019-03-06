@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>楼宇面积能耗分析</title>
+		<link rel="stylesheet" href="/project1/styles/bootstrap.min.css">
+  		<link rel="stylesheet" href="/project1/styles/bootstrap-table.min.css" crossorigin="anonymous">
+  		<link href="/project1/styles/perfect-scrollbar.min.css" rel="stylesheet">		
+		
+		<!--表格样式-->
+		<link rel="stylesheet" href="../../styles/bootstarp_nav_list.css">
+    	<link rel="stylesheet" href="../../styles/sec_sec.css">
+		
+		<link rel="stylesheet" type="text/css" href="../../styles/heads_j.css"/>
+						
+		
+		
+		<style type="text/css">
+			.fixed-table-container thead th .sortable {
+				background-position-x: calc(50% + 20px);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="content">
+			<!--头部-->
+			<div class="heads_j ub">
+				<a href="javascript:history.back(-1)" class="head_span">返回</a>
+				<h1 class="head_h1">楼宇单位面积对比数据</h1>
+			</div>
+			
+			<div class="contents">
+				<div id="scrollbar" class="container-fluid" style="z-index:1;height:calc(100% - 93px);">
+			      <table id="table" data-toggle="table" data-classes="table table-no-bordered"
+			           data-page-list="[10, 25, 50, 100, ALL]"
+			           data-url="../data1.json">
+			       		<thead>
+			              	<tr>
+			                	<th data-field="id" data-halign="center" data-align="center">统计时间</th>
+			                	<th data-field="name" data-halign="center" data-align="center">时间点</th>
+			                 	<th data-field="price1" data-sorter="priceSorter" data-halign="center" data-align="center">住院楼<br />单位面积能耗</th>
+			                    <th data-field="price2" data-sorter="priceSorter" data-halign="center" data-align="center">门急诊楼<br />单位面积能耗</th>
+			                    <th data-field="price3" data-sorter="priceSorter" data-halign="center" data-align="center">科研楼<br />单位面积能耗</th>
+			                    <th data-field="price4" data-sorter="priceSorter" data-halign="center" data-align="center">行政楼<br />单位面积能耗</th>
+			                    <th data-field="price5" data-sorter="priceSorter" data-halign="center" data-align="center">医技楼<br />单位面积能耗</th>
+			                    <th data-field="price6" data-sorter="priceSorter" data-halign="center" data-align="center">综合楼<br />单位面积能耗</th>
+			                    <th data-field="price7" data-sorter="priceSorter" data-halign="center" data-align="center">传染病楼<br />单位面积能耗</th>
+			                    <th data-field="price8" data-sorter="priceSorter" data-halign="center" data-align="center">其他楼<br />单位面积能耗</th>
+			                </tr>
+			            </thead>
+			       </table>			    
+			   </div>
+			</div>
+		</div>
+	</body>
+	<script src="/project1/scripts/jQuery-2.2.0.min.js"></script>
+    <script src="/project1/scripts/bootstrap.min.js"></script>
+    <script src="/project1/scripts/bootstrap-table.min.js"></script>
+    <script src="/project1/scripts/bootstrap-table-zh-CN.min.js"></script>    
+    <script src="/project1/scripts/perfect-scrollbar.min.js"></script>
+	<script src="../../scripts/HMI/HMI_list.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		//自第一
+	    function priceSorter(a, b) {
+	        a = +a.substring(1); // remove $
+	        b = +b.substring(1);
+	        if (a > b) return 1;
+	        if (a < b) return -1;
+	        return 0;
+	    }
+	    function getHeight() {
+	        return $(window).height() - ($('.heads_j').outerHeight(true) + 20);
+	    }
+	    var $table = $('#table');
+
+      	$table.bootstrapTable({
+         	height: getHeight(),
+     	});
+		Ps.initialize($(".fixed-table-body")[0]);
+		
+		function priceFormatter(value) {
+	        return "<a href='eco_hos.html'>" + value + "</a>";
+	    }
+		
+		function priceFormatter1(value) {
+	        return  value + "<img src='../../images/HMI/img_hjt.png'>";
+	    }
+		
+	</script>
+
+</html>

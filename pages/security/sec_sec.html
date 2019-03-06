@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>安全运行</title>
+
+    <!-- Bootstrap -->
+   <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+	<link rel="stylesheet" href="/project1/styles/bootstrap.min.css" >
+    
+
+    <!-- 自定义css -->
+    <link rel="stylesheet" href="../../styles/bootstarp_nav.css">
+    <link rel="stylesheet" href="../../styles/sec_sec.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_zxkve5iyaex6flxr.css">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+      <nav class="navbar navbar-inverse ">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a id="retrun" class="navbar-brand" href="#" onClick="javascript :history.back(-1);"><i class="iconfont icon-fanhui"></i>返回</a>
+        </div>
+      	<div class="center_title">
+          		<h3>医院安全运行指数SI</h3>
+          </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">2016年 上海市 (市综合)</a></li>
+             <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="iconfont icon-weibiaoti1"></i></a>
+          <div class="dropdown-menu">
+             你好，世界！
+          </div>
+        </li>
+          </ul>
+        </div>
+      
+    </nav>
+
+
+   <div class="container-fluid" style="z-index:1;height:calc(100% - 93px);">
+ 	 <div class="row" style=" z-index:1;height: 48%">
+		<div id="DT_01" class="col-xs-3" style="z-index:1;height: 100%">
+          <div class="device_si">
+             <!-- 设备运行数据 -->
+            <!--  <h5>设备运行数据</h5>
+             <h6>涉及医院：32</h6> -->
+             <div id="SI_1" style="z-index:1;height:100%;">
+               
+             </div>
+          </div>
+        </div>
+			  <div id="DT_02" class="col-xs-6" style="z-index:1;height: 100%">
+                 <div class="device_si">
+                 <!-- 医院安全运行指数 -->
+                   <div id="SI_2" class="col-xs-9" style="z-index:1;height:100%;">
+                   
+                  </div> 
+                 <div id="hos_p" class="col-xs-3" style="z-index:1;height:100%;position: relative;">
+                     <!-- 医院指标 -->
+                     <div class="hos_index">
+                         <h6>医院指标</h6>
+                         <div class="col-xs-6 hos_index_div"  style="z-index:1;height:calc(100% - 25px)">
+                          <div>市综合</div>
+                          <div>市专科</div>
+                          <div>区属二甲以上</div>
+                          <div>区属二乙</div>
+                          <div>区数专科</div>
+                          <div>其他</div>
+                         </div>
+                         <div class="col-xs-6 hos_index_div2" style="z-index:1;height:calc(100% - 25px);text-align: right;">
+                                <div>86.48</div>
+                                <div>86.48</div>
+                                <div>86.48</div>
+                                <div>86.48</div>
+                                <div>86.48</div>
+                                <div>86.48</div>
+                         </div>
+                         </div>
+                 </div>
+                </div>
+			  </div>
+			  <div  class="col-xs-3" style=" z-index:1;height: 100%">
+              <div class="device_si" style="height: 100%">
+             <!-- 设备管理 -->
+                <h6 style="font-size: 17px;
+                           font-weight: bolder;">设备管理</h6>
+                <div class="lable_right">重点设备数：<span class="label label-info">430</span></div>
+                 <div class=" row_device" style="height: calc(100% - 70px);text-align: center;">
+                        <div  class="col-xs-6" style="height: 50%">
+                          <div class="row_device_index">
+                              <div id="bg_img_1"  class="col-xs-5">
+                                     <div class="img_center"><img src="../../images/HMI/icon_WX_gzl.png"/><br><span>事故数</br>(个)</span></div>
+                              </div>
+                              <div class="col-xs-7" >
+                              <div  class="">
+                                
+                                  <p class="nuber"><a href="./sec_accident.html">15</a></p>
+                                  <p>状态</p>
+                                  <p>涉及：12家</p>
+                              </div>
+                              </div>
+                          </div>
+                        </div>
+                        <div  class="col-xs-6" style="height: 50%">
+                         <div  class="row_device_index">
+                              <div id="bg_img_2" class="col-xs-5">
+                                      <div class="img_center"><img src="../../images/SI/icon_AQ_qjgqs.png"/><br><span>强检过期数</br>(个)</span></div>
+                              </div>
+                              <div class="col-xs-7">
+                              <div class="">
+                                  <p  class="nuber"><a href="./sec_maintenancs_analysis.html">153</a></p>
+                                  <p>状态</p>
+                                  <p>涉及：12家</p>
+                            </div>
+                              </div>
+                         </div>
+                        </div>
+                        <div  class="col-xs-6" style="height: 50%">
+                         <div class="row_device_index">
+                            <div id="bg_img_3" class="col-xs-5"><div class="img_center"><img src="../../images/SI/icon_AQ_wbgqs.png"/><br><span>维保过期数</br>(个)</span></div></div>
+                            <div class="col-xs-7">
+                            <div class="">
+                              
+                                  <p  class="nuber"><a href="./sec_maintenance_expired.html">153</a></p>
+                                  <p>状态</p>
+                                  <p>涉及：12家</p>
+                            </div>
+                            </div>
+                            
+                        </div>
+                         </div>
+                        <div  class="col-xs-6" style="height: 50%">
+                          <div class="row_device_index">
+                            <div id="bg_img_4" class="col-xs-5"><div class="img_center"><img src="../../images/SI/icon_AQ_gzwxs.png"/><br><span>故障维修数</br>(个)</span></div></div>
+                            <div class="col-xs-7">
+                            <div class="">
+                              
+                                 <p  class="nuber"><a href="./sec_inspect_analysis.html">115</a></p>
+                                  <p>状态</p>
+                                  <p>涉及：12家</p>
+                            </div>
+                            </div>
+                          </div>
+                        </div>
+                  </div>
+              </div>
+			  </div>
+	 </div>
+	  <div class="row" style=" z-index:1;height: 52%">
+			  <div id="DT_01" class="col-xs-9" style=" z-index:1;height: 100%">
+             <div class="device_si" id="SI_3">
+             <!-- 医院安全运行预警图 -->
+
+               </div>
+			  </div>
+			  <div id="DT_02" class="col-xs-3" style="z-index:1;height: 100% ;position: relative;">
+             <div class="device_si">
+             <!-- 安全隐患排行 -->
+                <div id="SI_4" style="z-index:1;height: 50% ;">
+                    
+                </div>
+                <div class="col-xs-12" style="z-index:1;height: 50% ;">
+                    <div class="col-xs-5 top5" style="z-index:1;height: 100% ;" >
+                       <h5><a href="./sec_warning.html">存在安全隐患 Top5</a></h5>
+                       <div><span class="label label-success">1</span><a href="./sec_hos.html">中山医院</a></div>
+                       <div><span class="label label-success">2</span><a href="./sec_hos.html">华山医院</a></div>
+                       <div><span class="label label-success">3</span><a href="./sec_hos.html">同济医院</a></div>
+                    </div>
+                    <div class="col-xs-3 top5" style="z-index:1;height: 100% ;" >
+                         <h5>SI 指数</h5>
+                       <div>67.30</div>
+                       <div>36.30</div>
+                       <div>983.0</div>
+                    </div>
+                    <div class="col-xs-4 top5" style="z-index:1;height: 100% ;">
+                         <h5>同级平均分</h5>
+                       <div>123</div>
+                       <div>233</div>
+                       <div>43.32</div>
+                    </div>
+                </div>
+             </div>
+			  </div>
+		  </div>
+	 </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="/project1/scripts/jQuery-2.2.0.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="/project1/scripts/bootstrap.min.js" ></script>
+<!-- <script src="echarts.js"></script> -->
+<script src="/project1/scripts/echarts.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../scripts/SI/myChart_SI_1.js"></script>
+<script src="../../scripts/SI/myChart_SI_2.js"></script>
+<script src="../../scripts/SI/myChart_SI_3.js"></script>
+<script src="../../scripts/SI/myChart_SI_4.js"></script>
+<script src="../../scripts/SI/myChart_SI_5.js"></script>
+<script>
+  $(window).resize(function(){
+     myChart_SI_1.resize();
+     myChart_SI_2.resize();
+     myChart_SI_3.resize();
+     myChart_SI_4.resize();
+  })
+</script>
+  </body>
+</html>

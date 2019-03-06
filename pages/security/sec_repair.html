@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN" style="min-height: 100%">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>设备故障维修列表</title>
+
+    <!-- Bootstrap -->
+   <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+  <link rel="stylesheet" href="/project1/styles/bootstrap.min.css">
+  <link rel="stylesheet" href="/project1/styles/bootstrap-table.min.css" crossorigin="anonymous">
+  <link href="/project1/styles/perfect-scrollbar.min.css" rel="stylesheet">
+
+
+    
+
+    <!-- 自定义css -->
+    <link rel="stylesheet" href="../../styles/bootstarp_nav_list.css">
+    <link rel="stylesheet" href="/styles/sec_sec.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_zxkve5iyaex6flxr.css">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body style="overflow: hidden;">
+      <nav class="navbar navbar-inverse ">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a id="retrun" class="navbar-brand" href="#" onClick="javascript :history.back(-1);"><i class="iconfont icon-fanhui"></i>返回</a>
+        </div>
+        <div class="center_title">
+              <h3>医院后勤重大安全运行信息</h3>
+          </div>
+    </nav>
+  
+
+   <div id="scrollbar" class="container-fluid" style="z-index:1;height:calc(100% - 93px);">
+      <table 
+        id="table" 
+        data-halign="center"
+        data-align="center"
+        data-toggle="table"
+        data-classes="table table-no-bordered"
+           data-page-list="[10, 25, 50, 100, ALL]"
+           data-url="./data1.json">
+       <thead>
+              <tr>
+                  <th data-field="id" data-halign="center" data-align="center" data-sortable="true">NO.</th>
+                  <th data-field="name" data-halign="center" data-align="center" >设备名称</th>
+                  <th data-field="price" data-halign="center" data-align="center"  data-sorter="priceSorter">设备标识</th>
+                  <th data-field="1" data-halign="center" data-align="center"  data-sorter="priceSorter">保修时间</th>
+                  <th data-field="2" data-halign="center" data-align="center"  data-sorter="priceSorter">紧急程度</th>
+                  <th data-field="3" data-halign="center" data-align="center"  data-sorter="priceSorter">保修故障</th>
+                  <th data-field="4" data-halign="center" data-align="center"  data-sorter="priceSorter">保修人</th>
+                  <th data-field="5" data-halign="center" data-align="center"  data-sorter="priceSorter">保修完成时间</th>
+                  <th data-field="6" data-halign="center" data-align="center"  data-sorter="priceSorter">维修单位/人</th>
+              </tr> 
+            </thead>
+      </table>
+    
+   </div>
+
+  <script src="/project1/scripts/jquery.min.js"></script>
+    <script src="/project1/scripts/bootstrap.min.js"></script>
+    <script src="/project1/scripts/bootstrap-table.min.js"></script>
+    <script src="/project1/scripts/bootstrap-table-zh-CN.min.js"></script>
+    
+      <script src="/project1/scripts/perfect-scrollbar.min.js"></script>
+
+<script>
+  //自第一
+    function priceSorter(a, b) {
+        a = +a.substring(1); // remove $
+        b = +b.substring(1);
+        if (a > b) return 1;
+        if (a < b) return -1;
+        return 0;
+    }
+    function getHeight() {
+        return $(window).height() - ($('.navbar-inverse').outerHeight(true) + 20);
+    }
+     var $table = $('#table');
+
+      $table.bootstrapTable({
+          height: getHeight(),
+      });
+Ps.initialize($(".fixed-table-body")[0]);
+</script>
+  </body>
+</html>

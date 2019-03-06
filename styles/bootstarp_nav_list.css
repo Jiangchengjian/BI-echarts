@@ -1,0 +1,111 @@
+ html{
+         min-height:100%;
+         color: #ccd3e2;
+        }
+ body {
+          height:100%;
+          margin:0; 
+          min-width: 960px;
+          color: #ccd3e2;
+          background:rgba(0,0,0,0.6)  url("../images/beijing.jpg") no-repeat;
+          background-size: 100% 100%;
+ }
+         
+
+
+          /* 自定义nav样式 */
+          .container-fluid{
+            height: 70px !important;
+          }
+          .navbar-inverse {
+                 background: none !important;
+                  border-bottom:1px solid #999;
+                  box-shadow:0 6px 10px rgba(250, 250, 250, 0.3);
+                }
+          .navbar-nav>li>a {
+                padding-top: 30px;
+                padding-bottom: 20px;
+            }
+        .navbar-brand {
+            float: left;
+            height: 50px;
+            padding: 30px 15px;
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .iconfont{
+          margin-right: 2px;
+        }
+        h3{
+          font-weight: bold;
+        }
+.center_title{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -120px;
+  margin-top: -36.5px;
+  color:#009bfe !important;
+
+}
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 5px !important;
+    padding-left: 5px !important;
+}
+.icon-fanhui{
+  font-size: 24px !important;
+   float: left !important;
+}
+img{
+  display: inline-block;
+  max-width:100%;
+  height:auto;
+}
+
+
+/* reset table css */
+.bootstrap-table{
+  /* background: rgba(250, 250, 250, .2) !important; */
+  color: #ccd3e2;
+}
+
+  .bootstrap-table .table tr:hover{
+        
+      background: rgba(250, 250, 250, .2);
+        color: #fff;
+    }
+    .bootstrap-table .table thead tr:hover{
+        
+      background:none;
+    }
+    table>thead>tr>th a:hover{
+        color: #009bfe;
+    }
+    .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
+          border-top: 1px solid rgba(157, 157, 157, 0);
+    }
+    .table>caption+thead>tr:first-child>td, .table>caption+thead>tr:first-child>th, .table>colgroup+thead>tr:first-child>td, .table>colgroup+thead>tr:first-child>th, .table>thead:first-child>tr:first-child>td, .table>thead:first-child>tr:first-child>th{
+      border-bottom: 1px solid rgba(157, 157, 157, 0.29);
+    }
+      .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th{
+          border-top: 1px solid rgba(157, 157, 157, 0.29);
+    }
+.table>thead>tr>th{
+  border-bottom: 0px !important;
+}
+ .table>thead>tr>td, .table>thead>tr>th,.table,.table>thead>tr>th,.table>thead>tr{
+   border-bottom: 1px solid rgba(157, 157, 157, 0.29);
+ }
+
+ /* img */
+
+.fixed-table-container thead th .both {
+    background-position-x: calc(50% + 24px);
+}
+
+ /* toolbar css */
+  .pull-left {
+      float:inherit!important
+    }

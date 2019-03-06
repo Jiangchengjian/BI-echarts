@@ -1,0 +1,146 @@
+.device_si{
+	height: 98% !important;
+	padding-bottom: 15px;
+	border: 1px solid #004672;
+	border-radius: 4px;
+}
+.top5:first-child{
+	color: #009bfe;
+}
+.top5>div{
+	font-size: 12px;
+	height: 24px;
+	line-height: 24px;
+	text-align: center;
+}
+.top5>h5{
+	text-align: center;
+	color: #fff;
+}
+h5{
+	font-size: 12px;
+}
+
+ul>li{
+	list-style-type: none;
+	/* width: 100%; */
+}
+.ul_li{
+	margin-top: 35px;
+	font-size: 12px;
+}
+.ul_li>li,.ul_li_hos>li{
+	height: 24px;
+    line-height: 24px;
+}
+	.ul_li>li>span{
+		display: inline-block;
+		width: 15%;
+		text-align: center;
+	}
+	/* .ul_li>li{
+		border-bottom:1px solid #fff; 
+	} */
+	.ul_li>li>span{
+		border-bottom:1px solid #fff; 
+	}
+	.ul_li>li>span:first-child{
+		border-right:1px solid #fff; 
+		width: 35%;
+	}
+	.ul_li>li>span:last-child{
+		width: 16%;
+	}
+	.ul_li>li:hover{
+		cursor: pointer;
+		background:url('../images/HMI/img_HMI_lb.png') center center no-repeat;
+		background-size: 100% 100%;
+
+	}
+
+	/* 维修cri */
+.ul_li_hos{
+	margin-top: 35px;
+	font-size: 12px;
+}
+	.ul_li_hos>li>span{
+		display: inline-block;
+		width: 22%;
+		text-align: center;
+	}
+	/* .ul_li_hos>li{
+		border-bottom:1px solid #fff; 
+	} */
+	.ul_li_hos>li>span{
+		border-bottom:1px solid #fff; 
+	}
+	.ul_li_hos>li>span:first-child{
+		border-right:1px solid #fff; 
+		width: 35%;
+	}
+	.ul_li_hos>li>span:last-child{
+		width: 16%;
+	}
+	.ul_li_hos>li:hover{
+		cursor: pointer;
+		background:url('../images/HMI/img_HMI_lb.png') center center no-repeat;
+		background-size: 100% 100%;
+
+	}
+.hos_index{
+	position: absolute;
+	cursor: pointer;
+	min-width: 60%;
+	min-height: 70%;
+    right: 10px;
+    top: 18px;
+    padding: 5px;
+    overflow: hidden;
+    background: rgba(28, 92, 151, 0.26);
+}
+.hos_index_div>div{
+	min-width: 120px;
+	font-size: 12px;
+}
+.label{
+	margin-right: 4px !important;
+}
+.next{
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	background:url('../images/24blue.png') center center no-repeat;
+	background-size: 100% 100%;
+	background-position:0px 7px;
+}
+.sm_title{
+	position: absolute;
+	display: inline-block;
+  	top: 15px;right: 10%;
+    font-size: 14px;
+}
+  /* css resize */
+@media screen and (min-width: 1400px) {
+.top5>div{
+	font-size: 14px;
+	height: 30px;
+	line-height: 30px;
+}
+h5{
+	font-size: 16px;
+}
+.ul_li>li{
+	height: 36px;
+    line-height: 36px;
+	}
+.ul_li_hos>li{
+	height: 36px;
+    line-height: 36px;
+	}
+.hos_index_div>div{
+	height: 24px;
+	line-height: 24px;
+}
+
+}
+

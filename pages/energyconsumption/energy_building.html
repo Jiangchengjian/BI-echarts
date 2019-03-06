@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>不同楼宇单位面积能耗</title>
+		<link rel="stylesheet" href="/project1/styles/bootstrap.min.css" >
+		<link rel="stylesheet" type="text/css" href="../../styles/heads_j.css"/>
+		<link rel="stylesheet" type="text/css" href="../../styles/energy_building.css"/>
+	</head>
+	<body>
+		<div class="content">
+			<!--头部-->
+			<div class="heads_j ub">
+				<a href="javascript:history.back(-1)" class="head_span">返回</a>
+				<h1 class="head_h1">单位面积能耗分析</h1>
+				<div class="head_R ub">
+					<select name="">
+						<option value="">按年统计</option>
+						<option value="">按季度统计</option>
+						<option value="">按月份统计</option>
+					</select>
+					<select name="">
+						<option value="">2016</option>
+					</select>
+				</div>
+			</div>		
+						
+			
+			<!--内容-->
+			
+			<div class="contents">
+					
+				<div class="row cont1">
+					<div class="cont11">
+						<a href="energy_building_per.html" class="ub titles"><span>单楼宇单位面积能耗分析</span><span></span></a>														
+						<div id="louyu2"></div>
+					</div>
+				</div>	
+				<div class="row cont2">
+					<div class="cont21">
+						<a href="energy_building_analysis.html" class="ub titles"><span>多楼宇单位面积能耗分析</span><span></span></a>														
+						<div id="louyus"></div>
+					</div>
+				</div>	
+			</div>
+			
+			
+			
+			
+			
+			
+			
+		</div>
+	</body>
+	<script src="/project1/scripts/jQuery-2.2.0.min.js"></script>
+	<script src="/project1/scripts/echarts.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/project1/scripts/echarts-liquidfill.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../scripts/EI/louyu2.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../scripts/EI/louyus.js" type="text/javascript" charset="utf-8"></script>
+</html>

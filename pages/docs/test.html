@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>perfect-scrollbar</title>
+    <link href="bootstrap-combined.min.css" rel="stylesheet">
+    <link href="perfect-scrollbar.min.css" rel="stylesheet">
+    <!-- <link href="prettify.css" rel="stylesheet"> -->
+    <style>
+      #Demo { position:relative; margin:0px auto; padding:0px; width: 600px; height: 400px; overflow: hidden; }
+      #Demo .content { background-image: url('./azusa.jpg'); width: 1280px; height: 720px; }
+    </style>
+  </head>
+  <body>
+   
+        <div id='Demo'>
+          <div class='content'>
+          </div>
+        </div>
+      
+     
+    <script src="jquery.min.js"></script>
+    <script src="perfect-scrollbar.min.js"></script>
+    <script src="prettify.js"></script>
+    <script>
+      $(function() {
+        
+        Ps.initialize(document.getElementById('Demo'));
+      });
+    </script>
+    <script>
+      $(function() {
+        prettyPrint();
+      });
+    </script>
+  </body>
+</html>

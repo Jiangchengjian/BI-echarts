@@ -1,0 +1,57 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+}
+
+.ub {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	display: box;
+}
+
+.realative{
+	width: 100%;
+	height: 60px;
+	position: relative;
+}
+.realative p{
+	width: 100%;
+	background-color: #333333;
+	line-height: 60px;
+	font-size: 30px;
+	color: #337ab7;
+	text-align: center;
+}
+.realative a{
+	font-size: 20px;
+	color: white;
+	position: absolute;
+	left: 15px;
+	top: 10px;
+}
+.realative .span1{
+	color: white;
+	position: absolute;
+	right: 100px;
+	top: 20px;
+}
+.realative span:last-child{
+	color: white;
+	position: absolute;
+	right: 10px;
+	top: 20px;
+}
+
+.content{
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	height: calc(100% - 60px);
+	padding: 6px;
+	background-color: black;
+}
